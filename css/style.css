@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.center {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    padding-top: 1%;
+    padding: 0 2%;
+    background-color: #212343;
+}
+
+.header img {
+    padding: 2%;
+    width: 15%;
+}
+
+.container-banner {
+    width: 100%;
+    height: 467px;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center {
+    height: 100%;
+    max-width: 1280px;
+}
+
+.form {
+    padding: 15px;
+    width: 400px;  
+    height: calc(100% + 30px);
+    position: relative;
+    top: -15px;
+    float: right;
+    background-color: white;
+    border: 8px solid rgba(120, 120, 120, 0.4);
+    background-clip: padding-box;
+}
+
+.form h2 {
+    font-weight: 300;
+    color: #999999;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container span {
+    display: inline-block;
+    width: 100%;
+    color: #bbbbbb;
+}
+
+.input-container input[type="text"]:focus {
+    outline: none;
+}
+
+.input-container input[type="text"] {
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+form p {
+    color: #bbbbbb;
+    margin: 15px 0;
+}
+
+form input[type="submit"] {
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    background-color: #363A6D;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    border-bottom: 10px solid #4A5097;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.form .submit-center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #323665;
+}
+
+.container-list {
+    padding: 35px;
+    margin: 87px;
+    float: left;
+    width: 563px;
+    height: 267px;
+    background-color: rgba(33, 35, 37, 0.7);
+}
+
+.container-list ul {
+    list-style-position: inside;
+}
+
+.container-list li{
+    margin-top: 20px;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+}
+
+.container-2 {
+    padding: 60px 2%;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    width: 100%;
+    max-width: 767px;
+    display: inline-block;
+    text-align: justify;
+    margin: 10px 0;
+    text-indent: 25px;
+    line-height: 25px;
+    padding: 0 2%;
+}
+
+.arrow {
+    text-align: center;
+    position: relative;
+    top: -22px;
+}
+
+.arrow img {
+    width: 48px;
+}
+
+.section {
+    padding: 70px 2%;
+}
+
+.section h2 {
+    text-align: center;
+    color: rgb(70, 38, 99);
+    font-weight: normal;
+}
+
+.section .images {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section .images{
+    float: left;
+    width: 33.3%;
+}
+
+.container-icon {
+    padding: 30px;
+}
+
+.images p {
+    padding: 10px 30px;
+    line-height: 25px;
+}
+
+.footer {
+    border-top: 4px solid #888888;
+    padding: 30px 0;
+    text-align: center;
+    color: #888888;
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1153px) {
+    .container-list {
+        width: 75%;
+    }
+    .header img {
+        width: 23%;
+        margin: 10px 0;
+    }
+    .header{
+        text-align: center;
+    }
+    .container-banner {
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .form {
+        padding: 15px;
+        max-width: 400px;
+        width: 90%;  
+        height: 100%;
+        margin: 0 auto;
+        top: 0;
+        float: none;
+        display: inline-block;
+    }
+    .container-list {
+        padding: 5%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 567px;
+        float: none;
+        height: 100%;
+    }
+    .container-list li{
+        margin: 3% 0;
+        color: whitesmoke;
+        letter-spacing: 1.5px;
+    }
+    .input-container input[type="text"] {
+        width: 250px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header img {
+        width: 30%;
+        margin: 10px 0;
+    }
+    .container-icon .images {
+        margin: 30px auto;
+        display: inline-block;
+        width: 100%;
+    }
+    .container-icon .images .text-single {
+        max-width: 400px;
+        display: inline-block;
+    }
+}
